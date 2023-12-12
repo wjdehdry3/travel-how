@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2481AC56AE13C3EDC6508C40 /* Pods_travel_how.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423F510614BB7A496F7F87E9 /* Pods_travel_how.framework */; };
 		AB89DEF42B283F9000E9CC55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89DEF32B283F9000E9CC55 /* AppDelegate.swift */; };
 		AB89DEF62B283F9000E9CC55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89DEF52B283F9000E9CC55 /* SceneDelegate.swift */; };
 		AB89DEF82B283F9000E9CC55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89DEF72B283F9000E9CC55 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		423F510614BB7A496F7F87E9 /* Pods_travel_how.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_travel_how.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BFE9E43162CBB1AD879030 /* Pods-travel-how.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-how.release.xcconfig"; path = "Target Support Files/Pods-travel-how/Pods-travel-how.release.xcconfig"; sourceTree = "<group>"; };
 		AB89DEF02B283F9000E9CC55 /* travel-how.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "travel-how.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB89DEF32B283F9000E9CC55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB89DEF52B283F9000E9CC55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		AB89DEFC2B283F9500E9CC55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB89DEFF2B283F9500E9CC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB89DF012B283F9500E9CC55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD67BA79EF1E0E8896D3DA21 /* Pods-travel-how.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-how.debug.xcconfig"; path = "Target Support Files/Pods-travel-how/Pods-travel-how.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2481AC56AE13C3EDC6508C40 /* Pods_travel_how.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				AB89DEF22B283F9000E9CC55 /* travel-how */,
 				AB89DEF12B283F9000E9CC55 /* Products */,
+				FB1F2BF6961666A6DCEC215B /* Pods */,
+				B899CD14E0F64DC589A367A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "travel-how";
 			sourceTree = "<group>";
 		};
+		B899CD14E0F64DC589A367A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				423F510614BB7A496F7F87E9 /* Pods_travel_how.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB1F2BF6961666A6DCEC215B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD67BA79EF1E0E8896D3DA21 /* Pods-travel-how.debug.xcconfig */,
+				62BFE9E43162CBB1AD879030 /* Pods-travel-how.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB89DF042B283F9500E9CC55 /* Build configuration list for PBXNativeTarget "travel-how" */;
 			buildPhases = (
+				6152A8585956BCD19DB52DEC /* [CP] Check Pods Manifest.lock */,
 				AB89DEEC2B283F9000E9CC55 /* Sources */,
 				AB89DEED2B283F9000E9CC55 /* Frameworks */,
 				AB89DEEE2B283F9000E9CC55 /* Resources */,
+				98530EDF70BA8B6CA6360875 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6152A8585956BCD19DB52DEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-travel-how-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98530EDF70BA8B6CA6360875 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-travel-how/Pods-travel-how-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-travel-how/Pods-travel-how-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-travel-how/Pods-travel-how-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB89DEEC2B283F9000E9CC55 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		AB89DF052B283F9500E9CC55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD67BA79EF1E0E8896D3DA21 /* Pods-travel-how.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		AB89DF062B283F9500E9CC55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BFE9E43162CBB1AD879030 /* Pods-travel-how.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

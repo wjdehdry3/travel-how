@@ -6,5 +6,7 @@ target 'travel-how' do
   use_frameworks!
 
   # Pods for travel-how
+  pod 'FSCalendar'
+  pod 'SnapKit'
 
 end
